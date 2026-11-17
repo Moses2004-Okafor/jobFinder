@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>JOB FINDER</h1>
+        <div class="nav-links">
+          <a href="#jobs">Jobs</a>
+          <a href="#saved">Saved Jobs</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2 class="secondheading">Find Your Next Opportunity</h2>
+        <p class="secondheading">
+          Discover jobs and internships that match your skills...
+        </p>
+        <form id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a Job..."
+          />
+          <button type="submit" id="button">Search</button>
+        </form>
+      </section>
+      <section class="filters">
+        <select id="jobType">
+          <option value="">All Job Opportunities</option>
+          <option value="full-time">Full-time</option>
+          <option value="part-time">Part-time</option>
+          <option value="internship">Internship</option>
+        </select>
+        <select id="location">
+          <option value="">All Location</option>
+          <option value="remote">Remote</option>
+          <option value="onsite">On-site</option>
+        </select>
+      </section>
+      <section id="jobs">
+        <h2>Job Opportunities</h2>
+        <div id="jobResults"></div>
+      </section>
+      <section id="saved">
+        <h2>Saved Jobs</h2>
+        <div id="savedJobs"></div>
+      </section>
+    </main>
+    <button id="backToTop">Back to Top</button>
+    <footer>
+      <p>&copy; 2026 JobFinder</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- 
+Update fonts
+centralize headings/buttons
+Add padding to input fields and dropdowns
+change the color of the search button
+style job card texts
+add back to top button
+put saved jobs in a card format
+-->
